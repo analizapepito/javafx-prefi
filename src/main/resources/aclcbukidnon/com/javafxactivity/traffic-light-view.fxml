@@ -1,16 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="411.0" prefWidth="638.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="309.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Circle fill="#575757" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fill="#575757" layoutX="110.0" layoutY="110.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
-      <Circle fill="#575757" layoutX="310.0" layoutY="110.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <!-- Red Light -->
+      <Circle fx:id="redLight" fill="#8a8b8d" layoutX="152.0" layoutY="86.0" radius="72.0" stroke="BLACK" strokeType="INSIDE" />
+
+      <!-- Yellow Light -->
+      <Circle fx:id="yellowLight" fill="#8a8b8d" layoutX="152.0" layoutY="240.0" radius="72.0" stroke="BLACK" strokeType="INSIDE" />
+
+      <!-- Green Light -->
+      <Circle fx:id="greenLight" fill="#8a8b8d" layoutX="152.0" layoutY="394.0" radius="72.0" stroke="BLACK" strokeType="INSIDE" />
+
+      <!-- Start Button -->
+      <Button fx:id="startButton" layoutX="132.0" layoutY="475.0" mnemonicParsing="false" text="Start" onAction="#onStartButtonClick">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+
+      <!-- Stop Button -->
+      <Button fx:id="stopButton" layoutX="132.0" layoutY="512.0" mnemonicParsing="false" text="Stop" onAction="#onStopButtonClick">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
    </children>
-   <padding>
-      <Insets left="10.0" right="10.0" />
-   </padding>
-</HBox>
+</AnchorPane>
